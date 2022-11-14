@@ -365,7 +365,7 @@ p {
   border-radius: 4px;
   padding: 40px;
 }
-.modal-close {
+.close__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -381,7 +381,7 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:focus {
+.close__button:focus {
   fill: var(--accent-color);
   transform: translateY(-50%);
 }
@@ -395,7 +395,7 @@ p {
   background-color: transparent;
   cursor: pointer;
 }
-.close:hover .modal-close {
+.close:hover .close__button {
   fill: var(--accent-color);
   transform: translateY(-65%);
 }
