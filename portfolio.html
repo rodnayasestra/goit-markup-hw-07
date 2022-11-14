@@ -18,26 +18,32 @@
   <body>
     <!-- шапка-->
     <header class="header">
-      <div class="container main-nav">
+      <div class="container header__main-nav">
         <nav class="nav">
-          <a href="./index.html" class="logo"> Web<span class="studio">Studio</span></a>
+          <a href="./index.html" class="header__logo logo">
+            Web<span class="header__logo--black">Studio</span></a
+          >
           <ul class="header-nav">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link">Студія</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link header-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-nav contacts">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link-contacts"
-              ><svg class="icons-header">
+        <ul class="header-nav contacts-list">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.com" class="contacts-list__link"
+              ><svg class="contacts-list__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link-contacts"
-              ><svg class="icons-header smartphone">
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__link"
+              ><svg class="contacts-list__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -49,16 +55,16 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наші проекти</h1>
-          <ul class="filter-buttons">
-            <li><button type="button" class="filter-button">Усі</button></li>
-            <li><button type="button" class="filter-button">Веб-сайти</button></li>
-            <li><button type="button" class="filter-button">Додатки</button></li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
-            <li><button type="button" class="filter-button">Маркетинг</button></li>
+          <ul class="filter-list">
+            <li><button type="button" class="filter-list__item">Усі</button></li>
+            <li><button type="button" class="filter-list__item">Веб-сайти</button></li>
+            <li><button type="button" class="filter-list__item">Додатки</button></li>
+            <li><button type="button" class="filter-list__item">Дизайн</button></li>
+            <li><button type="button" class="filter-list__item">Маркетинг</button></li>
           </ul>
-          <ul class="projects">
-            <li class="projects-item">
-              <a href="" class="project-link"
+          <ul class="projects-list">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link"
                 ><div class="thumb">
                   <img
                     src="./images/technokryak.jpg"
@@ -67,20 +73,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Технокряк</h2>
-                  <p class="projects-portfolio-title">Веб-сайт</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Технокряк</h2>
+                  <p class="project-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link"">
                 <div class="thumb">
                   <img
                     src="./images/neworleanvsgstar.jpg"
@@ -89,20 +95,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ex architecto
                     voluptatibus sint natus dolorem blanditiis commodi inventore esse. Numquam
                     maiores veritatis reiciendis fugiat perspiciatis!
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Постер New Orlean vs Golden Star</h2>
-                  <p class="projects-portfolio-title">Дизайн</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/seafood.jpg"
@@ -111,20 +117,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum
                     omnis consequatur ullam id ad maiores natus a eum sint repellat est, ipsa sequi
                     officiis!
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Ресторан Seafood</h2>
-                  <p class="projects-portfolio-title">Додаток</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Ресторан Seafood</h2>
+                  <p class="project-list__text">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/prime.jpg"
@@ -133,21 +139,21 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, vel magni
                     quam obcaecati exercitationem nobis amet odit tempore aperiam quisquam
                     consequuntur, error sit distinctio. Odio.
                   </p>
                 </div>
 
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Проєкт Prime</h2>
-                  <p class="projects-portfolio-title">Маркетинг</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Проєкт Prime</h2>
+                  <p class="project-list__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/boxesproject.jpg"
@@ -156,21 +162,21 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, distinctio
                     explicabo. Dolorem obcaecati deserunt provident labore numquam sunt unde,
                     architecto vel perspiciatis fugiat. Dolorum, unde?
                   </p>
                 </div>
 
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Проєкт Boxes</h2>
-                  <p class="projects-portfolio-title">Додаток</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Проєкт Boxes</h2>
+                  <p class="project-list__text">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/insphasnoborder.jpg"
@@ -179,20 +185,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias debitis
                     doloribus expedita iusto nisi! Cupiditate at nulla cum, ex soluta officia
                     impedit blanditiis laudantium ullam?
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Inspiration has no Borders</h2>
-                  <p class="projects-portfolio-title">Веб-сайт</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Inspiration has no Borders</h2>
+                  <p class="project-list__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/limitededition.jpg"
@@ -201,20 +207,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est ex porro
                     odio, ipsam laborum laboriosam praesentium eius quas voluptatibus sit, fuga
                     distinctio facere exercitationem.
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Видання Limited Edition</h2>
-                  <p class="projects-portfolio-title">Дизайн</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Видання Limited Edition</h2>
+                  <p class="project-list__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/lab.jpg"
@@ -223,20 +229,20 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga tenetur
                     non facilis saepe sapiente, error quasi vero eius commodi velit, numquam,
                     doloremque molestiae sequi.
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Проєкт LAB</h2>
-                  <p class="projects-portfolio-title">Маркетинг</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Проєкт LAB</h2>
+                  <p class="project-list__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="projects-item">
-              <a href="" class="project-link">
+            <li class="projects-list__item">
+              <a href="" class="project-list__link">
                 <div class="thumb">
                   <img
                     src="./images/growingbusiness.jpg"
@@ -245,15 +251,15 @@
                     height="295"
                     class="img"
                   />
-                  <p class="project-text">
+                  <p class="overlay-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sint, vel
                     quod, id saepe nam corrupti neque natus officia nisi quidem? Eius possimus quis
                     numquam.
                   </p>
                 </div>
-                <div class="item-borders">
-                  <h2 class="projects-portfolio">Growing Business</h2>
-                  <p class="projects-portfolio-title">Додаток</p>
+                <div class="project-list__borders">
+                  <h2 class="projects-list__title">Growing Business</h2>
+                  <p class="project-list__text">Додаток</p>
                 </div></a
               >
             </li>
@@ -266,40 +272,46 @@
       <div class="container">
         <div class="footer-list">
           <div>
-            <a href="./index.html" class="logo"> Web<span class="studio">Studio</span></a>
-            <address class="adress">
-              <ul>
-                <li class="adress-footer">м. Київ, пр-т Лесі Українки, 26</li>
-                <li class="mail-footer">
-                  <a href="mailto:" class="contacts-footer">info@devstudio.com</a>
+            <a href="./index.html" class="footer__logo logo">
+              Web<span class="footer__logo--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address-list">
+                <li class="address-list__item">
+                  <a href="" class="address-list__link place">м. Київ, пр-т Лесі Українки, 26</a>
                 </li>
-                <li><a href="tel:+380961111111" class="contacts-footer">+38 096 111 11 11</a></li>
+                <li class="address-list__item">
+                  <a href="mailto:" class="address-list__link">info@devstudio.com</a>
+                </li>
+                <li class="address-list__item">
+                  <a href="tel:+380961111111" class="address-list__link">+38 096 111 11 11</a>
+                </li>
               </ul>
             </address>
           </div>
           <div class="footer-item">
-            <h3 class="footer-title">Приєднуйтесь</h3>
-            <ul class="social-media">
+            <h3 class="footer-item__title">Приєднуйтесь</h3>
+            <ul class="media-list">
               <li>
-                <a href="" class="media-links footer"
+                <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
                 ></a>
               </li>
               <li>
-                <a href="" class="media-links footer"
+                <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
                 ></a>
               </li>
               <li>
-                <a href="" class="media-links footer"
+                <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
                 ></a>
               </li>
               <li>
-                <a href="" class="media-links footer"
+                <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
                 ></a>
@@ -307,19 +319,19 @@
             </ul>
           </div>
           <div class="footer-item">
-            <form>
-              <label for="mail"
-                ><h3 class="footer-title form">Підпишіться на розсилку</h3>
+            <h3 class="footer-item__title">Підпишіться на розсилку</h3>
+            <form class="js-form footer-form">
+              <label for="mail">
                 <input
                   type="email"
                   name="enter-mail"
                   id="mail"
-                  class="email-footer"
+                  class="footer-form__email"
                   placeholder="E-mail"
               /></label>
-              <button type="submit" class="footer-button">
+              <button type="submit" class="footer-form__button">
                 Підписатися
-                <svg width="24" height="24" class="footer-send">
+                <svg width="24" height="24" class="footer-form__icon">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
