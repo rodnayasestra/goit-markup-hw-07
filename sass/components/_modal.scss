@@ -167,7 +167,7 @@
     background-position: 65% 60%;
     border-color: transparent;
     background-origin: border-box;
-    transition: 250ms $transition-function;
+    transition: background-color 250ms $transition-function;
   }
   &__title::before {
     content: '';
@@ -179,7 +179,7 @@
     margin-right: 8px;
     border: 2px solid #000;
     border-radius: 2px;
-    transition: 250ms $transition-function;
+    transition: background-color 250ms $transition-function;
   }
   &__title {
     font-weight: 400;
