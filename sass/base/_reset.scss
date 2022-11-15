@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: $transition-function;
+  transition-property: fill, color, background-color, box-shadow;
+}
+button {
+  transition-duration: 250ms;
+  transition-timing-function: $transition-function;
+  transition-property: color, background-color, box-shadow;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: $mainFont, sans-serif;
+  color: $primary-h-color;
+  letter-spacing: 0.03em;
+  background-color: $primary-white-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: block;
+}
+

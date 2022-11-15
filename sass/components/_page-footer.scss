@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-and-hero-color;
+  &-list {
+    display: flex;
+  }
+  &-item {
+    padding-top: 12px;
+    margin-left: 70px;
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: $primary-white-color;
+      margin-bottom: 20px;
+    }
+  }
+  &-form__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border: none;
+    padding: 10px 62px 10px 28px;
+    margin-left: 12px;
+    position: relative;
+    &:hover,
+    &:focus {
+      background-color: $hover-accent-color;
+    }
+  }
+  &-form__email {
+    width: 360px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    color: $primary-white-color;
+    transition: border 250ms $transition-function;
+    &:hover,
+    &:focus {
+      outline: 0;
+      border-color: $accent-color;
+    }
+    &-form::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &-form__icon {
+    position: absolute;
+    fill: $primary-white-color;
+    right: 28px;
+    bottom: 13px;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  &-list__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  &-list__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .place {
+    color: $primary-white-color;
+  }
+}
+
+.media-list {
+  @include flexible();
+  gap: 10px;
+  &__link {
+    fill: $borders-color;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $primary-white-color;
+    }
+  }
+}

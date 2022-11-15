@@ -1,0 +1,26 @@
+.customers-list {
+  display: flex;
+  gap: 30px;
+  &__link {
+    fill: $borders-color;
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: block;
+    width: 170px;
+    height: 92px;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+}
+

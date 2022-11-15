@@ -1,0 +1,19 @@
+.logo {
+  color: $accent-color;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.header__logo{
+    margin-right: 90px;
+    &--black{
+        color: #000;
+    }
+}
+.footer__logo{
+    margin-right: 0;
+    &--white{
+        color:$primary-white-color;
+    }
+}

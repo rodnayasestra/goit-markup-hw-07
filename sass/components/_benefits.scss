@@ -1,0 +1,27 @@
+.benefits-list {
+  @include flexible;
+  gap: 30px;
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-p-color;
+  }
+  &__icon {
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    border-radius: 4px;
+    background-color: $secondary-bg-color;
+    width: 270px;
+    height: 120px;
+  }
+}
