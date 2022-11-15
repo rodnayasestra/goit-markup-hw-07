@@ -19,7 +19,7 @@
     color: $primary-white-color;
   }
   &--team-bg {
-    background-color: $secondary-bg-color
+    background-color: $secondary-bg-color;
   }
   &--hero {
     max-width: 1600px;
@@ -33,7 +33,7 @@
       url('../images/briefing.jpg');
     text-align: center;
   }
-  &--padding{
+  &--padding {
     padding: 0;
   }
 }

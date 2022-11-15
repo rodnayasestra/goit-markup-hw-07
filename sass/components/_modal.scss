@@ -1,4 +1,3 @@
-
 .backdrop {
   display: flex;
   position: fixed;
@@ -24,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: 300ms $transition-function;
+  transition: transform 300ms $transition-function;
   width: 530px;
   height: 580px;
   background-color: $primary-white-color;
@@ -55,7 +54,7 @@
     cursor: pointer;
     background-color: $primary-white-color;
     fill: #000;
-    transition: 250ms $transition-function;
+    transition: transform 250ms $transition-function, fill 250ms $transition-function;
   }
   &__button:focus {
     fill: $accent-color;
@@ -99,7 +98,7 @@
     margin-top: 4px;
     border-radius: 4px;
     padding-left: 42px;
-    transition: 250ms $transition-function;
+    transition: border-color 250ms $transition-function;
     color: $primary-p-color;
     &::placeholder {
       font-size: 12px;
@@ -118,7 +117,7 @@
     }
   }
   &__icon {
-    transition: 250ms $transition-function;
+    transition: fill 250ms $transition-function;
     position: absolute;
     bottom: 0;
     transform: translateY(-50%);

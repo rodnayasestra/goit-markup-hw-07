@@ -7,7 +7,7 @@ a {
 button {
   transition-duration: 250ms;
   transition-timing-function: $transition-function;
-  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
 }
 ul {
   list-style: none;
@@ -34,4 +34,3 @@ p {
 .img {
   display: block;
 }
-
