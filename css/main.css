@@ -76,26 +76,44 @@ p {
   margin-right: auto;
 }
 
-.logo {
-  color: #2196f3;
-  font-family: "Raleway";
+.section {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section__title {
+  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
-
-.header__logo {
-  margin-right: 90px;
-}
-.header__logo--black {
-  color: #000;
-}
-
-.footer__logo {
-  margin-right: 0;
-}
-.footer__logo--white {
+.section__title--hero {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
+}
+.section--team-bg {
+  background-color: #f5f4fa;
+}
+.section--hero {
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/briefing.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/briefing.jpg");
+  text-align: center;
+}
+.section--padding {
+  padding: 0;
 }
 
 .contacts-list__link, .header-nav__link {
@@ -181,44 +199,26 @@ p {
   height: 16px;
 }
 
-.section {
-  background-color: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section__title {
-  margin-bottom: 50px;
+.logo {
+  color: #2196f3;
+  font-family: "Raleway";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.2;
 }
-.section__title--hero {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+
+.header__logo {
+  margin-right: 90px;
+}
+.header__logo--black {
+  color: #000;
+}
+
+.footer__logo {
+  margin-right: 0;
+}
+.footer__logo--white {
   color: #ffffff;
-}
-.section--team-bg {
-  background-color: #f5f4fa;
-}
-.section--hero {
-  max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/briefing.jpg");
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/briefing.jpg");
-  text-align: center;
-}
-.section--padding {
-  padding: 0;
 }
 
 .hero__button {
