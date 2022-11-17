@@ -50,7 +50,7 @@
     transition: border 250ms $transition-function;
     &:hover,
     &:focus {
-      outline: 0;
+      outline: none;
       border-color: $accent-color;
     }
     &-form::placeholder {

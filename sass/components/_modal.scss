@@ -95,7 +95,7 @@
     }
     &:hover,
     &:focus {
-      outline: 0;
+      outline: none;
       border: 1px solid #2196f3;
     }
     &:hover + .form__icon,
