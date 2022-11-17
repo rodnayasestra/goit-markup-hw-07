@@ -32,37 +32,24 @@
   border-radius: 4px;
   padding: 40px;
 }
-.close {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+
+.close__button {
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  &__button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    background-color: $primary-white-color;
-    fill: #000;
-    transition: transform 250ms $transition-function, fill 250ms $transition-function;
-  }
-  &__button:focus {
+  background-color: $primary-white-color;
+  fill: #000;
+  transition: fill 250ms $transition-function;
+  &:focus,
+  &:hover {
     fill: $accent-color;
-    transform: translateY(-50%);
-  }
-  &:hover &__button {
-    fill: $accent-color;
-    transform: translateY(-50%);
   }
 }
 .form {

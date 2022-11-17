@@ -382,16 +382,6 @@ p {
   padding: 40px;
 }
 
-.close {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  cursor: pointer;
-}
 .close__button {
   position: absolute;
   top: 8px;
@@ -409,20 +399,11 @@ p {
   cursor: pointer;
   background-color: #ffffff;
   fill: #000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close__button:focus {
+.close__button:focus, .close__button:hover {
   fill: #2196f3;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.close:hover .close__button {
-  fill: #2196f3;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .form__title {
