@@ -87,6 +87,10 @@
   }
   .place {
     color: $primary-white-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
