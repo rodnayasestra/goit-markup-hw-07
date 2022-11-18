@@ -415,7 +415,7 @@ p {
   color: #212121;
   margin-bottom: 12px;
 }
-.form__field {
+.form__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,7 +434,7 @@ p {
   color: #757575;
   margin-bottom: 10px;
 }
-.form__field:nth-child(5) {
+.form__label:nth-child(5) {
   margin-bottom: 20px;
 }
 .form__input {
