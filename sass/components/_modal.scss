@@ -72,7 +72,6 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: $primary-p-color;
-    position: relative;
     margin-bottom: 10px;
     &:nth-child(5) {
       margin-bottom: 20px;
@@ -98,10 +97,10 @@
       outline: none;
       border: 1px solid #2196f3;
     }
-    &:hover + .form__icon,
-    &:focus + .form__icon {
-      fill: $accent-color;
-    }
+  }
+
+  &__wrapper {
+    position: relative;
   }
   &__icon {
     transition: fill 250ms $transition-function;
@@ -109,6 +108,10 @@
     bottom: 0;
     transform: translateY(-50%);
     left: 12px;
+    .form__input:hover + &,
+    .form__input:focus + & {
+      fill: $accent-color;
+    }
   }
   &__textarea {
     width: 448px;

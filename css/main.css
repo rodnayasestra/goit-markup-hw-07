@@ -432,7 +432,6 @@ p {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
-  position: relative;
   margin-bottom: 10px;
 }
 .form__field:nth-child(5) {
@@ -483,8 +482,8 @@ p {
   outline: none;
   border: 1px solid #2196f3;
 }
-.form__input:hover + .form__icon, .form__input:focus + .form__icon {
-  fill: #2196f3;
+.form__wrapper {
+  position: relative;
 }
 .form__icon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,6 +493,9 @@ p {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 12px;
+}
+.form__input:hover + .form__icon, .form__input:focus + .form__icon {
+  fill: #2196f3;
 }
 .form__textarea {
   width: 448px;
