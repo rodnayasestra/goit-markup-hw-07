@@ -9,10 +9,10 @@
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: $accent-color;
-  color: $primary-white-color;
+  background-color: map-get($colors, accent);
+  color: map-get($colors, primary-white);
   &:hover,
   &:focus {
-    background-color: $hover-accent-color;
+    background-color: map-get($colors, hover-accent);
   }
 }

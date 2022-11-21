@@ -12,29 +12,6 @@
   margin: -1px;
 }
 
-a {
-  text-decoration: none;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: fill, color, background-color, -webkit-box-shadow;
-  transition-property: fill, color, background-color, -webkit-box-shadow;
-  transition-property: fill, color, background-color, box-shadow;
-  transition-property: fill, color, background-color, box-shadow, -webkit-box-shadow;
-}
-
-button {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
-  transition-property: color, background-color, fill, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow, fill;
-  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
-}
-
 ul {
   list-style: none;
   margin: 0px;
@@ -61,6 +38,29 @@ p {
 
 .img {
   display: block;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill, color, background-color, -webkit-box-shadow;
+  transition-property: fill, color, background-color, -webkit-box-shadow;
+  transition-property: fill, color, background-color, box-shadow;
+  transition-property: fill, color, background-color, box-shadow, -webkit-box-shadow;
+}
+
+button {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, fill, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
 }
 
 .thumb {

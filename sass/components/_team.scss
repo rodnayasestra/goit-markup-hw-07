@@ -12,7 +12,7 @@
     line-height: 1.18;
   }
   &__member {
-    background-color: $primary-white-color;
+    background-color: map-get($colors, primary-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -22,7 +22,7 @@
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
-    color: $primary-p-color;
+    color: map-get($colors, primary-p);
   }
 }
 
@@ -31,7 +31,7 @@
   gap: 10px;
   padding-bottom: 30px;
   &__link {
-    fill: $borders-color;
+    fill: map-get($colors, borders-color);
     display: flex;
     width: 44px;
     height: 44px;
@@ -39,8 +39,8 @@
     border-radius: 50%;
     &:hover,
     &:focus {
-      background-color: $accent-color;
-      fill: $primary-white-color;
+      background-color: map-get($colors, accent);
+      fill: map-get($colors, primary-white);
     }
   }
 }

@@ -26,7 +26,7 @@
   transition: transform 300ms $transition-function;
   width: 530px;
   height: 580px;
-  background-color: $primary-white-color;
+  background-color: map-get($colors, primary-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -44,12 +44,12 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: $primary-white-color;
+  background-color: map-get($colors, primary-white);
   fill: #000;
   transition: fill 250ms $transition-function;
   &:focus,
   &:hover {
-    fill: $accent-color;
+    fill: map-get($colors, accent);
   }
 }
 .form {
@@ -71,7 +71,7 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: $primary-p-color;
+    color: map-get($colors, primary-p);
     margin-bottom: 10px;
     &:nth-child(5) {
       margin-bottom: 20px;
@@ -85,7 +85,7 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color 250ms $transition-function;
-    color: $primary-p-color;
+    color: map-get($colors, primary-p);
     &::placeholder {
       font-size: 12px;
       line-height: calc(14 / 12);
@@ -110,7 +110,7 @@
     left: 12px;
     .form__input:hover + &,
     .form__input:focus + & {
-      fill: $accent-color;
+      fill: map-get($colors, accent);
     }
   }
   &__textarea {
@@ -125,15 +125,15 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     padding: 10px 52px;
-    background-color: $accent-color;
-    color: $primary-white-color;
+    background-color: map-get($colors, accent);
+    color: map-get($colors, primary-white);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
     &:hover,
     &:focus {
-      background-color: $hover-accent-color;
+      background-color: map-get($colors, hover-accent );
     }
   }
 }
@@ -150,7 +150,7 @@
   }
 
   &__input:checked ~ &__title::before {
-    background-color: $accent-color;
+    background-color: map-get($colors, accent );
     background-image: url('../images/icon-check.svg');
     background-repeat: no-repeat;
     background-position: 65% 60%;
@@ -182,7 +182,7 @@
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit;
-    color: $accent-color;
+    color: map-get($colors, accent);
     text-decoration: underline;
   }
 }

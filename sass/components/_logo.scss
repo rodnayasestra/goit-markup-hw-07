@@ -1,5 +1,5 @@
 .logo {
-  color: $accent-color;
+  color: map-get($colors, accent);
   font-family: $secondaryFont;
   font-weight: 700;
   font-size: 26px;
@@ -14,6 +14,6 @@
 .footer__logo {
   margin-right: 0;
   &--white {
-    color: $primary-white-color;
+    color: map-get($colors, primary-white);
   }
 }

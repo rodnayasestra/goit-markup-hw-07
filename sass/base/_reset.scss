@@ -1,14 +1,3 @@
-a {
-  text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: $transition-function;
-  transition-property: fill, color, background-color, box-shadow;
-}
-button {
-  transition-duration: 250ms;
-  transition-timing-function: $transition-function;
-  transition-property: color, background-color, box-shadow, fill;
-}
 ul {
   list-style: none;
   margin: 0px;
@@ -16,9 +5,9 @@ ul {
 }
 body {
   font-family: $mainFont, sans-serif;
-  color: $primary-h-color;
+  color: map-get($colors, primary-h);
   letter-spacing: 0.03em;
-  background-color: $primary-white-color;
+  background-color: map-get($colors, primary-white);
 }
 h1,
 h2,

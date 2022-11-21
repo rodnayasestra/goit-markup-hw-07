@@ -13,7 +13,7 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
-    color: $primary-white-color;
+    color: map-get($colors, primary-white );
     background-color: rgba(47, 48, 58, 0.8);
   }
 }

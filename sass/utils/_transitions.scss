@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: $transition-function;
+  transition-property: fill, color, background-color, box-shadow;
+}
+button {
+  transition-duration: 250ms;
+  transition-timing-function: $transition-function;
+  transition-property: color, background-color, box-shadow, fill;
+}

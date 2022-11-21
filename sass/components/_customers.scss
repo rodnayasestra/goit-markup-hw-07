@@ -2,7 +2,7 @@
   display: flex;
   gap: 30px;
   &__link {
-    fill: $borders-color;
+    fill: map-get($colors, borders-color);
     padding: 16px 32px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -11,8 +11,8 @@
     height: 92px;
     &:hover,
     &:focus {
-      fill: $accent-color;
-      border-color: $accent-color;
+      fill: map-get($colors, accent);
+      border-color: map-get($colors, accent);
     }
   }
   &__item {

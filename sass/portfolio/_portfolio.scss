@@ -10,8 +10,8 @@
     line-height: 1.62;
     border-radius: 4px;
     border: none;
-    background-color: $secondary-bg-color;
-    color: $primary-h-color;
+    background-color: map-get($colors, secondary-bg);
+    color: map-get($colors, primary-h);
     &:hover,
     &:focus,
     &:active {
@@ -21,8 +21,8 @@
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
       cursor: pointer;
-      background-color: $accent-color;
-      color: $primary-white-color;
+      background-color: map-get($colors, accent);
+      color: map-get($colors, primary-white);
     }
   }
 }
@@ -33,7 +33,7 @@
   gap: 30px;
   &__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
-    background-color: $primary-white-color;
+    background-color: map-get($colors, primary-white);
   }
   &__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,12 +56,12 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: $primary-h-color;
+    color: map-get($colors, primary-h);
   }
   &__text {
     font-size: 16px;
     line-height: 1.87;
-    color: $primary-p-color;
+    color: map-get($colors, primary-p);
   }
 }
 
@@ -73,7 +73,7 @@
   height: 100%;
   font-size: 18px;
   line-height: calc(28 / 18);
-  color: $primary-white-color;
+  color: map-get($colors, primary-white);
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
