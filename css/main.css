@@ -600,7 +600,7 @@ button {
 .benefits-list__text {
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
+  color: mgetcolor(primary-p);
 }
 .benefits-list__icon {
   margin-bottom: 30px;

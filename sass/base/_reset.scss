@@ -5,9 +5,9 @@ ul {
 }
 body {
   font-family: $mainFont, sans-serif;
-  color: map-get($colors, primary-h);
+  color: getcolor(primary-h);
   letter-spacing: 0.03em;
-  background-color: map-get($colors, primary-white);
+  background-color: getcolor(primary-white);
 }
 h1,
 h2,

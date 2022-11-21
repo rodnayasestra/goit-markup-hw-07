@@ -14,13 +14,13 @@
   &__text {
     font-size: 14px;
     line-height: 1.71;
-    color: map-get($colors, primary-p);
+    color: mgetcolor(primary-p);
   }
   &__icon {
     margin-bottom: 30px;
     padding: 25px 100px;
     border-radius: 4px;
-    background-color: map-get($colors, secondary-bg);
+    background-color: getcolor(secondary-bg);
     width: 270px;
     height: 120px;
   }

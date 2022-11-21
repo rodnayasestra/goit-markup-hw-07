@@ -1,5 +1,5 @@
 .section {
-  background-color: map-get($colors, primary-white);
+  background-color: getcolor(primary-white);
   padding-top: 94px;
   padding-bottom: 94px;
   &__title {
@@ -16,10 +16,10 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: map-get($colors, primary-white);
+    color: getcolor(primary-white);
   }
   &--team-bg {
-    background-color: map-get($colors, secondary-bg);
+    background-color: getcolor(secondary-bg);
   }
   &--hero {
     max-width: 1600px;
@@ -28,7 +28,7 @@
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-color: map-get($colors, hero-footer-color);
+    background-color: getcolor(hero-footer-color);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/briefing.jpg');
     text-align: center;

@@ -20,14 +20,14 @@
   }
   &-nav__link {
     @extend %link-style;
-    color: map-get($colors, primary-h);
+    color: getcolor(primary-h);
     &:hover,
     &:focus {
-      color: map-get($colors, accent);
+      color: getcolor(accent);
     }
   }
   &-nav__link--current {
-    color: map-get($colors, accent);
+    color: getcolor(accent);
     position: relative;
   }
   &-nav__link--current::after {
@@ -35,7 +35,7 @@
     width: 100%;
     height: 4px;
     position: absolute;
-    background-color: map-get($colors, accent);
+    background-color: getcolor(accent);
     border-radius: 4px;
     bottom: 0;
     left: 0;
@@ -51,10 +51,10 @@
   &__link {
     @include align;
     @extend %link-style;
-    color: map-get($colors, primary-p);
+    color: getcolor(primary-p);
     &:hover,
     &:focus {
-      color: map-get($colors, accent);
+      color: getcolor(accent);
     }
   }
   &__icon {
