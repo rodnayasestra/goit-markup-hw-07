@@ -381,6 +381,9 @@ button {
   border-radius: 4px;
   padding: 40px;
 }
+.modal-open {
+  overflow: hidden;
+}
 
 .close__button {
   position: absolute;
